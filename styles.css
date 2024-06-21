@@ -1,0 +1,180 @@
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 100;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff)
+      format("woff");
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 300;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff)
+      format("woff");
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 400;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff)
+      format("woff");
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 700;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff)
+      format("woff");
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 800;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff)
+      format("woff");
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 900;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff)
+      format("woff");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.hero {
+  /* position: relative; */
+  background-image: url("./heroImg.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.gradient {
+  /* position: absolute; */
+  top: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.869) 0%,
+    #000000a5 45%,
+    /* transparent 50%, */ #0000009e 55%,
+
+    rgba(0, 0, 0, 0.904) 100%
+  );
+  background-size: cover;
+  height: 100vh;
+  z-index: 10;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 3.2vw;
+  font-weight: 900;
+  z-index: 10;
+}
+
+.input-container {
+  display: flex;
+  gap: 8px;
+}
+
+input {
+  font-size: 16px;
+  padding: 18px;
+  width: 22vw;
+  color: #ffffff;
+  background-color: #191e1e9a;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+.btn {
+  font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 0 30px;
+  color: #ffffff;
+  background-color: #e50914;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+.btn i {
+  margin-top: 1.5px;
+  float: right;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: rgb(193, 17, 25);
+}
+
+hr {
+  width: 100vw;
+  height: 8px;
+  background-color: #232323;
+  border: none;
+  margin: 0;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+  max-width: 80vw;
+  margin: 50px auto;
+  row-gap: 50px;
+}
+
+.card {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #232323;
+  padding: 10px;
+  border-radius: 10px;
+  width: 20rem;
+}
